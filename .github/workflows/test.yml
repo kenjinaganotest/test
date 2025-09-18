@@ -1,3 +1,11 @@
-- name: Debug Secret
-     run:
-       echo "Debugging secret value: ${{ secrets.TESTHENSUU }}"
+name: Debug Secret
+
+on: [workflow_dispatch]
+
+jobs:
+  debug-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Secret Value
+        run: |
+          echo "Debugging secret value: ${{ secrets.TESTHENSUU }}"
