@@ -8,4 +8,4 @@ jobs:
     steps:
       - name: Display Environment Variables
         run: |
-          echo "MY_VAR: ${{ secrets.TESTHENSUU }}"
+          echo "TESTHENSUU: ${{ secrets.TESTHENSUU }}"
